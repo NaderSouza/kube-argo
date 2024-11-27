@@ -2,6 +2,12 @@
 
 Este guia descreve como configurar clusters locais utilizando **Minikube** e **Kind**, instalar o **ArgoCD**, e implantar a aplicação do repositório [kube-argo](https://github.com/NaderSouza/kube-argo) no Kubernetes.
 
+## Pré-requisitos
+
+Para que possamos continuar daqui para frente, precisamos ter o seguinte instalado:
+
+- Um cluster Kubernetes
+- kubectl instalado
 ---
 
 ## 1. Criar Clusters Locais
@@ -28,6 +34,9 @@ kind create cluster --config kind-config.yaml
 
 # Verificar o cluster
 kubectl get nodes
+
+#Aplicar o deplyment
+kubectl apply -f nginx-deployment.yaml
 ```
 
 ### 2. Instalar o ArgoCD
