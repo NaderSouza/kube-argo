@@ -1,14 +1,30 @@
-# Deploy Local de Kubernetes com ArgoCD e Aplicação `kube-argo`
+# Projeto kube-argo
+## Objetivo
+
+
+Deploy Local de Kubernetes com ArgoCD e Aplicação `kube-argo`
 
 Este guia descreve como configurar clusters locais utilizando **Minikube** e **Kind**, instalar o **ArgoCD**, e implantar a aplicação do repositório [kube-argo](https://github.com/NaderSouza/kube-argo) no Kubernetes.
 
-## Pré-requisitos
+## Para o desenvolvimento e implementação descritos neste guia, segui as seguintes premissas:
+- Utilizar Minikube e Kind para configurar clusters Kubernetes locais de forma prática e reproduzível.
+- Realizar a instalação do ArgoCD para gerenciar e automatizar implantações no Kubernetes.
+- Implantar a aplicação disponibilizada no repositório kube-argo diretamente no cluster Kubernetes configurado.
+- Garantir que todas as etapas sejam facilmente replicáveis para ambientes de desenvolvimento e testes.
 
+
+
+## Tecnologias relacionadas
+
+- [Kubernetes](https://kubernetes.io/)
+- [ArgoCD](https://argo-cd.readthedocs.io/)
+
+## Configuração da Aplicação
 Para que possamos continuar daqui para frente, precisamos ter o seguinte instalado:
 
 - Um cluster Kubernetes
 - kubectl instalado
----
+  
 
 ## 1. Criar Clusters Locais
 
@@ -107,3 +123,4 @@ argocd app list
 ### 6. Acessar o ArgoCD no Navegador
 
 ### https://localhost:8080
+
