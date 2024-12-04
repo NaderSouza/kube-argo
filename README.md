@@ -17,7 +17,10 @@ Este guia descreve como configurar clusters locais utilizando **Minikube** e **K
 ## Tecnologias relacionadas
 
 - [Kubernetes](https://kubernetes.io/)
+- [Kind](https://kind.sigs.k8s.io/)
+- [Minikube](https://minikube.sigs.k8s.io/docs/)
 - [ArgoCD](https://argo-cd.readthedocs.io/)
+- [Nginx](https://nginx.org/)
 
 ## Configuração da Aplicação
 Para que possamos continuar daqui para frente, precisamos ter o seguinte instalado:
