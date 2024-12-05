@@ -9,4 +9,4 @@ spec: # especificação do recurso
   - port: 9113 # porta do svc
     name: metrics # nome da porta
   selector: # seletor para identificar os pods/deployment que esse svc irá expor
-    app: nginx # label que identifica o pod/deployment que será exposto
+    app: nginx # label que identifica o pod/deployment que será exposto 
