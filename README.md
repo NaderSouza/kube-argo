@@ -54,8 +54,12 @@ kind create cluster --config kind-config.yaml
 # Verificar o cluster
 kubectl get nodes
 
-#Aplicar o deplyment
+#Aplicar os yaml
+kubectl apply -f nginx-html-configmap.yaml
+kubectl apply -f nginx-configmap.yaml
 kubectl apply -f nginx-deployment.yaml
+kubectl apply -f nginx-service.yaml
+kubectl apply -f nginx-pod.yaml
 ```
 
 ### 2. Instalar o ArgoCD
