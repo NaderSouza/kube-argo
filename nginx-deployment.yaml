@@ -25,6 +25,8 @@ spec: # especificação do recurso
             - name: nginx-config # nome do volume
               mountPath: /etc/nginx/conf.d/default.conf # caminho de montagem do volume
               subPath: nginx.conf # subpath do volume
+            - name: html-volume # novo volume para o HTML
+              mountPath: /usr/share/nginx/html # onde os arquivos HTML serão montados
         - name: nginx-exporter # nome do container que será o exporter
           image: 'nginx/nginx-prometheus-exporter:0.11.0' # imagem do container do exporter
           args: # argumentos do container
@@ -37,7 +39,10 @@ spec: # especificação do recurso
             - containerPort: 9113 # porta do container que será exposta
               name: metrics # nome da porta
       volumes: # volumes do template
-        - configMap: # configmap do volume, nós iremos criar esse volume através de um configmap
+        - configMap: # configmap do volume para o Nginx
             defaultMode: 420 # modo padrão do volume
             name: nginx-config # nome do configmap
           name: nginx-config # nome do volume
+        - configMap: # novo configmap para os arquivos HTML e CSS
+            name: html-config # nome do configmap que será criado
+          name: html-volume # nome do volume para os arquivos HTML e CSS
