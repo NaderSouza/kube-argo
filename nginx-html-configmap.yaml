@@ -18,7 +18,6 @@ data:
       </header>
       <main>
         <p>Esta é uma página HTML básica com estilo aplicado por CSS.</p>
-        <button>Saiba Mais</button>
       </main>
       <footer>
         <p>&copy; 2024 - Minha Página Simples</p>
@@ -27,8 +26,8 @@ data:
     </html>
   style.css: |
     body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
+      background-color: black; /* Define o fundo preto */
+      color: white; /* Define o texto branco */
+      font-family: Arial, sans-serif; /* Define a fonte */
+      text-align: center; /* Centraliza o texto */
     }
