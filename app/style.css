@@ -1,53 +1,116 @@
-/* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    text-align: center;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem 0;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  /* Conteúdo principal */
-  main {
-    padding: 2rem;
-  }
-  
-  main p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-  }
-  
-  main button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  main button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    margin-top: 2rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about, .details {
+  flex: 1;
+  margin: 20px;
+}
+
+.about h2, .details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.about p, .details ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details ul li {
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  flex: 0 0 150px;
+  margin: 20px;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+a{
+  text-decoration: none;
+}
+
+button a {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #45a049; 
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none; 
+  box-shadow: none; 
+  text-decoration: none;
+}
