@@ -55,7 +55,6 @@ kind create cluster --config kind-config.yaml
 kubectl get nodes
 
 #Aplicar os yaml
-kubectl apply -f nginx-html-configmap.yaml
 kubectl apply -f nginx-configmap.yaml
 kubectl apply -f nginx-deployment.yaml
 kubectl apply -f nginx-service.yaml
