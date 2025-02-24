@@ -21,6 +21,7 @@ Este guia descreve como configurar clusters locais utilizando **Minikube** e **K
 - [Kubernetes](https://kubernetes.io/)
 - [Minikube](https://minikube.sigs.k8s.io/docs/)
 - [Nginx](https://nginx.org/)
+- [Prometheus](https://prometheus.io/)
 
 ## Configuração da Aplicação
 
